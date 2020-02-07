@@ -1,0 +1,169 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<!-- Get w3css -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Set favicon & title (You might want to change these)-->
+<link rel="icon" type="image/png" href="https://codehs.com/uploads/252e05810fd8837484b23a6fee6bf39f">
+<title>FHS Spirit Store</title>
+<!-- Styles -->
+<style>
+/* Centering Stuff */
+.centered{
+	text-align:center;
+}
+.center-block{
+	margin-right:auto;
+	margin-left:auto;
+}
+
+/* The Slideshow */
+.slideshow{
+margin-left:auto;
+margin-right:auto;
+width:80%;
+}
+/* Compensating for the Navbar */
+.spacer{
+	height:150px;
+}
+/* Social Media Icons */
+.socialbutton{
+	width:64px;
+	height:64px;
+	margin-bottom:10px;
+}
+
+/* Height Control */
+.even{
+	height:384px;
+}
+.even2{
+	height:280px;
+}
+</style>
+</head>
+<body>
+<!-- The Navbar -->
+<div id="navbar" class>
+<div class="w3-top">
+	<header class="w3-container w3-red">
+	<!-- Navbar Title/site logo (if you want one, put it here.) -->
+	<h2 class="centered">Fishers Spirit Store</h2>
+	</header>
+	<div class="w3-bar w3-light-gray w3-border-gray w3-bottombar" style="text-align:center;">
+	<!-- Navbar links -->
+		<a href="store.html" class="w3-bar-item w3-button w3-right w3-hover-pale-red">Products</a>
+		<a href="calendar.html" class="w3-bar-item w3-button w3-right w3-hover-pale-red">Calendar</a>		
+		<a href="index.html" class="w3-bar-item w3-button w3-right w3-hover-pale-red">Home</a>
+	</div>
+	</div>
+</div>
+<!-- The navbar WOULD take up some space, but it's fixed to the top of the page. A spacer is required. -->
+<div class="spacer"><p>lol</p></div>
+<!-- The slideshow -->
+<div class="slideshow">
+<img class="mySlides center-block w3-round-xxlarge even" src="https://codehs.com/uploads/9c6680d2c0fd68686c2dcd2be724eff9" width="90%;">
+<img class="mySlides center-block w3-round-xxlarge even" src="https://codehs.com/uploads/6ecd96ca47c22f6117f45345873edcae" width="90%;">
+<img class="mySlides center-block w3-round-xxlarge even" src="https://codehs.com/uploads/d53cd81f5da65f9d480cc1d129d865a6" width="90%;">
+<img class="mySlides center-block w3-round-xxlarge even" src="https://codehs.com/uploads/ae29560ea6e5a66b173d3e601e24ffbc" width="90%;">
+</div>
+<!-- This script controls the slideshow. -->
+<script>
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 5000); // Set the time it takes to change slides.
+}
+</script>
+<br />
+
+<!-- This is the 3 columns. -->
+<div class="w3-container">
+<div class="w3-row-padding" style="margin:0 -16px">
+
+<!-- Column 1: Social Media -->
+	<div class="w3-third">
+		<div class="w3-card w3-light-gray w3-margin-bottom">
+			<header class="w3-container w3-red">
+				<h3>Social Media</h3>
+			</header>
+			<div class="w3-container w3-light-gray w3-border-gray w3-rightbar w3-leftbar even2">
+				<p>Want to stay in touch? <span class="w3-text-red"><b>Follow us on social media!</b></span></p>
+				<br />
+				<!-- Provide links to social media. Also, give them better images. The current ones are placeholders. -->
+				<a href="#"><img src="https://codehs.com/uploads/856d5939de84895937e604b9273a4e7e" class="socialbutton w3-round-large"></a>
+				<a href="#"><img src="https://codehs.com/uploads/d2d95afae070405a82dbf3411c13fc11" class="socialbutton w3-round-large"></a>
+				<a href="#"><img src="https://codehs.com/uploads/217991274f758e704eff511671f021d5" class="socialbutton w3-round-large"></a>
+				<br />
+				
+			</div>
+			<footer class="w3-topbar w3-border-red">
+			</footer>
+			
+		</div>
+	</div>
+	<!-- Column 2: Contact -->
+	<div class="w3-third">
+		<div class="w3-card w3-light-gray w3-margin-bottom">
+			<header class="w3-container w3-red">
+				<h3>Contact Us</h3>
+			</header>
+			<div class="w3-container w3-light-gray w3-border-gray w3-rightbar w3-leftbar even2">
+				<p>Any questions? Feel free to send us an email!</p>
+				<!-- Please put your emails here! -->
+								<a href="mailto:INSERT EMAIL HERE" class="w3-text-red"><b>Email Ms. Burchette</b></a>
+				
+				<br />
+<a href="mailto:INSERT EMAIL HERE" class="w3-text-red"><b>Email Mr. Guler</b></a>
+				<p></p>
+			</div>
+			<footer class="w3-topbar w3-border-red">
+			</footer>
+			
+		</div>
+	</div>
+	<!-- Column 3: Hours -->
+	<div class="w3-third">
+		<div class="w3-card w3-light-gray w3-margin-bottom">
+			<header class="w3-container w3-red">
+				<h3>Store Hours</h3>
+			</header>
+			<div class="w3-container w3-light-gray w3-border-gray w3-rightbar w3-leftbar even2">
+			<br />
+				<table class="w3-center center-block">
+				<!-- Opening/Closing times go here! -->
+				<tr><td>Sunday</td><td>[Open-Close]</td></tr>
+				<tr><td>Monday</td><td>[Open-Close]</td></tr>
+				<tr><td>Tuesday</td><td>[Open-Close]</td></tr>
+				<tr><td>Wednesday</td><td>[Open-Close]</td></tr>
+				<tr><td>Thursday</td><td>[Open-Close]</td></tr>
+				<tr><td>Friday</td><td>[Open-Close]</td></tr>
+				<tr><td>Saturday</td><td>[Open-Close]</td></tr>
+				</table>
+			</div>
+			<footer class="w3-topbar w3-border-red">
+			</footer>
+			
+		</div>
+	</div>
+</div>
+</div>
+<!-- This is the site footer. It contains a credit to the developers. -->
+<footer class="w3-red w3-container w3-center">
+<p>Website by <span class="w3-text-black w3-border-purple w3-border-bottom w3-border-top">Team Dark Magic</span></p>
+</footer>
+
+
+</body>
+</html>
