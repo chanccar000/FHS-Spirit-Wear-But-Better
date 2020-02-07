@@ -1,0 +1,668 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" type="png" href="https://codehs.com/uploads/252e05810fd8837484b23a6fee6bf39f">
+<title>FHS Spirit Store</title>
+<style>
+.space{
+height: 100px;
+}
+.flip-card {
+  background-color: transparent;
+  width:18%;
+  height: 350px;
+  perspective: 1000px;
+  float:left;
+  margin-right: 41px;
+  margin-left: 41px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+@media screen and (max-width: 481px){
+.flip-card {
+  background-color: transparent;
+  width:18%;
+  height: 350px;
+  perspective: 1000px;
+  float:left;
+  margin-right: 41px;
+  margin-left: 0px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+
+
+}
+
+tr{
+width:18%;
+/*display:table-cell;*/
+box-sizing:border-box;
+}
+
+.flip-card-inner, .flip-card-inner2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  -webkit-transition: transform 0.6s;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  -webkit-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.flip-card:hover .flip-card-inner2 {
+  -webkit-transform: rotateX(180deg);
+  -ms-transform: rotateX(180deg);
+  -moz-transform: rotateX(180deg);
+  -o-transform: rotateX(180deg);
+  transform: rotateX(180deg)
+}
+
+.flip-card-front, .flip-card-back, .flip-card-back2, .flip-card-front2{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: red;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: grey;
+  color: white;
+  -webkit-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg)
+}
+.flip-card-back2 {
+  background-color: red;
+  color: white;
+  -webkit-transform: rotateX(180deg);
+  -ms-transform: rotateX(180deg);
+  -moz-transform: rotateX(180deg);
+  -o-transform: rotateX(180deg);
+  transform: rotateX(180deg)
+}
+.nothing{
+	display:none;
+}
+.ProductTable{
+	width:100%;
+	table-layout:fixed;
+
+}
+
+.flip-card-front2{
+background-color:lightgrey;
+}
+.foot{
+position:static;
+bottom:0px;
+
+} 
+.bottomspacer{
+height:100%;
+
+
+}
+</style>
+</head>
+
+<body>
+<div id="navbar" class>
+<div class="w3-top">
+	<header class="w3-container w3-red">
+	<!-- Navbar Title/site logo (if you want one, put it here.) -->
+	<h2 class="centered">Fishers Spirit Store</h2>
+	</header>
+	<div class="w3-bar w3-light-gray w3-border-gray w3-bottombar" style="text-align:center;">
+	<!-- Navbar links -->
+		<a href="store.html" class="w3-bar-item w3-button w3-right w3-hover-pale-red">Products</a>
+		<a href="calendar.html" class="w3-bar-item w3-button w3-right w3-hover-pale-red">Calendar</a>		
+		<a href="index.html" class="w3-bar-item w3-button w3-right w3-hover-pale-red">Home</a>
+	</div>
+	</div>
+</div>
+
+<h1 class="space" style="color:white;">1</h1>
+<div class="w3-panel w3-blue w3-display-container">
+  <h3>Attention FHS Staff!</h3>
+  <p>Y'all get a discount! (For demo purposes, please refresh the page after closing.)</p>
+<span onclick="this.parentElement.style.display='none'"
+class="w3-button w3-display-topright w3-large">&times;</span>
+    
+</div> 
+
+<div class="w3-container w3-gray">
+
+<div class="w3-animate-opacity mySlides1 w3-row-padding">
+
+<div class="flip-card w3-quarter w3-cell w3-mobile">
+  <div class="flip-card-inner2">
+    <div class="flip-card-front">
+      <img style="width:100%;height:80%;" src="https://codehs.com/uploads/ca69383fe770b07818c892f03a20e764" alt="shirt">
+      <p>name</p>
+	</div>
+    <div class="flip-card-back2">
+      <h1>Shirt</h1> 
+      <p>information about the shirt</p> 
+      <p>price</p>
+    </div>
+  </div>
+</div>
+
+<div class="flip-card w3-quarter w3-cell w3-mobile">
+  <div class="flip-card-inner2">
+    <div class="flip-card-front">
+      <img style="width:100%;height:80%;" src="https://codehs.com/uploads/ca69383fe770b07818c892f03a20e764" alt="shirt">
+      <p>name</p>
+	</div>
+    <div class="flip-card-back2">
+      <h1>Shirt</h1> 
+      <p>information about the shirt</p> 
+      <p>price</p>
+    </div>
+  </div>
+</div>
+
+<div class="flip-card w3-quarter w3-cell w3-mobile">
+  <div class="flip-card-inner2">
+    <div class="flip-card-front">
+      <img style="width:100%;height:80%;" src="https://codehs.com/uploads/ca69383fe770b07818c892f03a20e764" alt="shirt">
+      <p>name</p>
+	</div>
+    <div class="flip-card-back2">
+      <h1>Shirt</h1> 
+      <p>information about the shirt</p> 
+      <p>price</p>
+    </div>
+  </div>
+</div>
+
+<div class="flip-card w3-quarter w3-cell w3-mobile">
+  <div class="flip-card-inner2">
+    <div class="flip-card-front">
+      <img style="width:100%;height:80%;" src="https://codehs.com/uploads/ca69383fe770b07818c892f03a20e764" alt="shirt">
+      <p>name</p>
+	</div>
+    <div class="flip-card-back2">
+      <h1>Shirt</h1> 
+      <p>information about the shirt</p> 
+      <p>price</p>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="w3-animate-opacity mySlides1 w3-row-padding">
+<div class="flip-card w3-quarter w3-cell w3-mobile">
+  <div class="flip-card-inner2">
+    <div class="flip-card-front">
+      <img style="width:100%;height:80%;" src="https://codehs.com/uploads/ca69383fe770b07818c892f03a20e764" alt="shirt">
+      <p>name</p>
+	</div>
+    <div class="flip-card-back2">
+      <h1>Shirt</h1> 
+      <p>information about the shirt</p> 
+      <p>price</p>
+    </div>
+  </div>
+</div>
+
+<div class="flip-card w3-quarter w3-cell w3-mobile">
+  <div class="flip-card-inner2">
+    <div class="flip-card-front">
+      <img style="width:100%;height:80%;" src="https://codehs.com/uploads/ca69383fe770b07818c892f03a20e764" alt="shirt">
+      <p>name</p>
+	</div>
+    <div class="flip-card-back2">
+      <h1>Shirt</h1> 
+      <p>information about the shirt</p> 
+      <p>price</p>
+    </div>
+  </div>
+</div>
+
+<div class="flip-card w3-quarter w3-cell w3-mobile">
+  <div class="flip-card-inner2">
+    <div class="flip-card-front">
+      <img style="width:100%;height:80%;" src="https://codehs.com/uploads/ca69383fe770b07818c892f03a20e764" alt="shirt">
+      <p>name</p>
+	</div>
+    <div class="flip-card-back2">
+      <h1>Shirt</h1> 
+      <p>information about the shirt</p> 
+      <p>price</p>
+    </div>
+  </div>
+</div>
+
+<div class="flip-card w3-quarter w3-cell w3-mobile">
+  <div class="flip-card-inner2">
+    <div class="flip-card-front">
+      <img style="width:100%;height:80%;" src="https://codehs.com/uploads/ca69383fe770b07818c892f03a20e764" alt="shirt">
+      <p>name</p>
+	</div>
+    <div class="flip-card-back2">
+      <h1>Shirt</h1> 
+      <p>information about the shirt</p> 
+      <p>price</p>
+    </div>
+  </div>
+</div>
+
+
+
+</div>
+</div>
+<button class="w3-button w3-display-left" onclick="plusDivs1(-1)">&#10094;</button>
+<button class="w3-button w3-display-right" onclick="plusDivs1(+1)">&#10095;</button>
+<div class="w3-container w3-padding-16">
+<input class="w3-input w3-border w3-padding" type="text" placeholder="Search for names.." id="myInput" onkeyup="myFunction()">
+</div>
+<div id="myTable">
+<div class="ProductTable mySlides2">
+
+
+<span class="ProductTableRow">
+<div class="nothing">Shirt 1</div>
+
+<div class="flip-card Product w3-quarter w3-cell w3-mobile">
+  <div class="flip-card-inner">
+    <div class="flip-card-front2">
+      <img style="width:100%;height:80%;" src="https://codehs.com/uploads/ca69383fe770b07818c892f03a20e764" alt="shirt">
+      <p>name</p>
+	</div>
+    <div class="flip-card-back">
+      <h1>Shirt 1</h1> 
+      <p>information about the shirt</p> 
+      <p>price</p>
+    </div>
+  </div>
+</div>
+
+</span>
+
+<span class="ProductTableRow">
+<div class="nothing">Shirt 2</div>
+<div class="flip-card Product w3-quarter w3-cell w3-mobile">
+  <div class="flip-card-inner">
+    <div class="flip-card-front2">
+      <img style="width:100%;height:80%;" src="https://codehs.com/uploads/5c5535022068a69878570cff7f628540" alt="shirt">
+      <p>name</p>
+	</div>
+    <div class="flip-card-back">
+      <h1>Shirt 2</h1> 
+      <p>information about the shirt</p> 
+      <p>price</p>
+    </div>
+  </div>
+</div>
+
+</span>
+
+<span class="ProductTableRow">
+<div class="nothing">Shirt 3</div>
+<div class="flip-card Product w3-quarter w3-cell w3-mobile">
+  <div class="flip-card-inner">
+    <div class="flip-card-front2">
+      <img style="width:100%;height:80%;" src="https://codehs.com/uploads/ca69383fe770b07818c892f03a20e764" alt="shirt">
+      <p>name</p>
+	</div>
+    <div class="flip-card-back">
+      <h1>Shirt 3</h1> 
+      <p>information about the shirt</p> 
+      <p>price</p>
+    </div>
+  </div>
+</div>
+
+</span>
+
+<span class="ProductTableRow">
+<div class="nothing">Shirt 4</div>
+<div class="flip-card Product w3-quarter w3-cell w3-mobile">
+  <div class="flip-card-inner">
+    <div class="flip-card-front2">
+      <img style="width:100%;height:80%;" src="https://codehs.com/uploads/ca69383fe770b07818c892f03a20e764" alt="shirt">
+      <p>name</p>
+	</div>
+    <div class="flip-card-back">
+      <h1>Shirt 4</h1> 
+      <p>information about the shirt</p> 
+      <p>price</p>
+    </div>
+  </div>
+</div>
+
+</span>
+
+<span class="ProductTableRow">
+<div class="nothing">Shirt 5</div>
+
+<div class="flip-card Product w3-quarter w3-cell w3-mobile">
+  <div class="flip-card-inner">
+    <div class="flip-card-front2">
+      <img style="width:100%;height:80%;" src="https://codehs.com/uploads/ca69383fe770b07818c892f03a20e764" alt="shirt">
+      <p>name</p>
+	</div>
+    <div class="flip-card-back">
+      <h1>Shirt 5</h1> 
+      <p>information about the shirt</p> 
+      <p>price</p>
+    </div>
+  </div>
+</div>
+
+</span>
+
+<span class="ProductTableRow">
+<div class="nothing">Shirt 6</div>
+<div class="flip-card Product w3-quarter w3-cell w3-mobile">
+  <div class="flip-card-inner">
+    <div class="flip-card-front2">
+      <img style="width:100%;height:80%;" src="https://codehs.com/uploads/ca69383fe770b07818c892f03a20e764" alt="shirt">
+      <p>name</p>
+	</div>
+    <div class="flip-card-back">
+      <h1>Shirt 6</h1> 
+      <p>information about the shirt</p> 
+      <p>price</p>
+    </div>
+  </div>
+</div>
+
+</span>
+
+<span class="ProductTableRow">
+<div class="nothing">Shirt 7</div>
+<div class="flip-card Product w3-quarter w3-cell w3-mobile">
+  <div class="flip-card-inner">
+    <div class="flip-card-front2">
+      <img style="width:100%;height:80%;" src="https://codehs.com/uploads/ca69383fe770b07818c892f03a20e764" alt="shirt">
+      <p>name</p>
+	</div>
+    <div class="flip-card-back">
+      <h1>Shirt 7</h1> 
+      <p>information about the shirt</p> 
+      <p>price</p>
+    </div>
+  </div>
+</div>
+
+</span>
+
+<span class="ProductTableRow">
+<div class="nothing">Shirt 8</div>
+<div class="flip-card Product w3-quarter w3-cell w3-mobile">
+  <div class="flip-card-inner">
+    <div class="flip-card-front2">
+      <img style="width:100%;height:80%;" src="https://codehs.com/uploads/ca69383fe770b07818c892f03a20e764" alt="shirt">
+      <p>name</p>
+	</div>
+    <div class="flip-card-back">
+      <h1>Shirt 8</h1> 
+      <p>information about the shirt</p> 
+      <p>price</p>
+    </div>
+  </div>
+</div>
+
+</span>
+
+</div>
+
+<div class="ProductTable mySlides2">
+
+<span class="ProductTableRow">
+<div class="nothing">Shirt 123</div>
+
+<div class="flip-card Product w3-quarter w3-cell w3-mobile">
+  <div class="flip-card-inner">
+    <div class="flip-card-front2">
+      <img style="width:100%;height:80%;" src="https://codehs.com/uploads/ca69383fe770b07818c892f03a20e764" alt="shirt">
+      <p>name</p>
+	</div>
+    <div class="flip-card-back">
+      <h1>Shirt 1</h1> 
+      <p>information about the shirt</p> 
+      <p>price</p>
+    </div>
+  </div>
+</div>
+
+</span>
+
+<span class="ProductTableRow">
+<div class="nothing">Shirt 2</div>
+<div class="flip-card Product w3-quarter w3-cell w3-mobile">
+  <div class="flip-card-inner">
+    <div class="flip-card-front2">
+      <img style="width:100%;height:80%;" src="https://codehs.com/uploads/ca69383fe770b07818c892f03a20e764" alt="shirt">
+      <p>name</p>
+	</div>
+    <div class="flip-card-back">
+      <h1>Shirt 2</h1> 
+      <p>information about the shirt</p> 
+      <p>price</p>
+    </div>
+  </div>
+</div>
+
+</span>
+
+<span class="ProductTableRow">
+<div class="nothing">Shirt 3</div>
+<div class="flip-card Product w3-quarter w3-cell w3-mobile">
+  <div class="flip-card-inner">
+    <div class="flip-card-front2">
+      <img style="width:100%;height:80%;" src="https://codehs.com/uploads/ca69383fe770b07818c892f03a20e764" alt="shirt">
+      <p>name</p>
+	</div>
+    <div class="flip-card-back">
+      <h1>Shirt 3</h1> 
+      <p>information about the shirt</p> 
+      <p>price</p>
+    </div>
+  </div>
+</div>
+
+</span>
+
+<span class="ProductTableRow">
+<div class="nothing">Shirt 4</div>
+<div class="flip-card Product w3-quarter w3-cell w3-mobile">
+  <div class="flip-card-inner">
+    <div class="flip-card-front2">
+      <img style="width:100%;height:80%;" src="https://codehs.com/uploads/ca69383fe770b07818c892f03a20e764" alt="shirt">
+      <p>name</p>
+	</div>
+    <div class="flip-card-back">
+      <h1>Shirt 4</h1> 
+      <p>information about the shirt</p> 
+      <p>price</p>
+    </div>
+  </div>
+</div>
+
+</span>
+
+<span class="ProductTableRow">
+<div class="nothing">Shirt 5</div>
+
+<div class="flip-card Product w3-quarter w3-cell w3-mobile">
+  <div class="flip-card-inner">
+    <div class="flip-card-front2">
+      <img style="width:100%;height:80%;" src="https://codehs.com/uploads/ca69383fe770b07818c892f03a20e764" alt="shirt">
+      <p>name</p>
+	</div>
+    <div class="flip-card-back">
+      <h1>Shirt 5</h1> 
+      <p>information about the shirt</p> 
+      <p>price</p>
+    </div>
+  </div>
+</div>
+
+</span>
+
+<span class="ProductTableRow">
+<div class="nothing">Shirt 6</div>
+<div class="flip-card Product w3-quarter w3-cell w3-mobile">
+  <div class="flip-card-inner">
+    <div class="flip-card-front2">
+      <img style="width:100%;height:80%;" src="https://codehs.com/uploads/ca69383fe770b07818c892f03a20e764" alt="shirt">
+      <p>name</p>
+	</div>
+    <div class="flip-card-back">
+      <h1>Shirt 6</h1> 
+      <p>information about the shirt</p> 
+      <p>price</p>
+    </div>
+  </div>
+</div>
+
+</span>
+
+<span class="ProductTableRow">
+<div class="nothing">Shirt 7</div>
+<div class="flip-card Product w3-quarter w3-cell w3-mobile">
+  <div class="flip-card-inner">
+    <div class="flip-card-front2">
+      <img style="width:100%;height:80%;" src="https://codehs.com/uploads/ca69383fe770b07818c892f03a20e764" alt="shirt">
+      <p>name</p>
+	</div>
+    <div class="flip-card-back">
+      <h1>Shirt 7</h1> 
+      <p>information about the shirt</p> 
+      <p>price</p>
+    </div>
+  </div>
+</div>
+
+</span>
+<span class="ProductTableRow">
+<div class="nothing">Shirt 8</div>
+<div class="flip-card Product w3-quarter w3-cell w3-mobile">
+  <div class="flip-card-inner">
+    <div class="flip-card-front2">
+      <img style="width:100%;height:80%;" src="https://codehs.com/uploads/ca69383fe770b07818c892f03a20e764" alt="shirt">
+      <p>name</p>
+	</div>
+    <div class="flip-card-back">
+      <h1>Shirt 8</h1> 
+      <p>information about the shirt</p> 
+      <p>price</p>
+    </div>
+  </div>
+</div>
+
+</span>
+</div>
+
+
+</div>
+<div class="bottomSpacer" style="color:white">.</div>
+<div class="w3-center ">
+  <div class="w3-section">
+    <button class="w3-button w3-light-grey" onclick="plusDivs2(-1)">❮ Prev</button>
+    <button class="w3-button w3-light-grey" onclick="plusDivs2(1)">Next ❯</button>
+  </div>
+  <button class="w3-button demo" onclick="currentDiv(1)">1</button> 
+  <button class="w3-button demo" onclick="currentDiv(2)">2</button> 
+</div>
+<br />
+<footer class="w3-red w3-container w3-center foot">
+<p>Website by <span class="w3-text-black w3-border-purple w3-border-bottom w3-border-top">Team Dark Magic</span></p>
+</footer>
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("span");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("div")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+</script>
+
+
+<script>
+var slideIndex1 = 1;
+showDivs1(slideIndex1);
+
+function plusDivs1(n) {
+  showDivs1(slideIndex1 += n);
+}
+
+function showDivs1(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides1");
+  if (n > x.length) {slideIndex1 = 1}
+  if (n < 1) {slideIndex1 = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex1-1].style.display = "block";
+}
+
+</script>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs2(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides2");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-red", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-red";
+}
+</script>
+</body>
+</html>

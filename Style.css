@@ -1,0 +1,58 @@
+table {
+	margin: 60px;
+    padding: 5px;
+}
+td {
+	text-align:center;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 100%
+}
+button {
+  padding: 30px;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.dropbtn {
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+tbody {
+	width: 100px;
+	display: table-row-group;
+	vertical-align: middle;
+	border-color: inherit;
+}
+.sprong{
+	width:70%;
+	margin-left:auto;
+	margin-right:auto;
+	
+	
+}
+@media screen and (max-width:481px){
+.sprong{
+	width:90%;
+	margin-left:auto;
+	margin-right:auto;
+	
+	
+}
+}
